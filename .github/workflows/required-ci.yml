@@ -1,0 +1,7 @@
+name: required-ci
+on: [push, pull_request]
+jobs:
+  required-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "H2-CI-OK repo=$GITHUB_REPOSITORY event=$GITHUB_EVENT_NAME ref=$GITHUB_REF actor=$GITHUB_ACTOR"
